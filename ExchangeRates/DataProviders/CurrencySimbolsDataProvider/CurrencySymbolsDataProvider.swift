@@ -12,7 +12,7 @@ protocol CurrencySimbolsDataProviderDelegate: DataProviderManagerDelegate {
     func success(model: CurrencySymbolObject)
 }
 
-class CurrencySimbolsDataProvider: DataProviderManager<CurrencySimbolsDataProviderDelegate, CurrencySymbolObject> {
+class CurrencySymbolsDataProvider: DataProviderManager<CurrencySimbolsDataProviderDelegate, CurrencySymbolObject> {
     private let currencyStore: CurrencyStore
     
     init(currencyStore: CurrencyStore = CurrencyStore()) {
