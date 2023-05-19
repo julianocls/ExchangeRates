@@ -64,13 +64,101 @@ class RateFluctuationViewModel: ObservableObject {
 }
 
 struct RateFluctuationDetailView: View {
+    @StateObject var viewModel = RateFluctuationViewModel()
+    @State var baseCurrency: String
+    @State var rateFluctuation: Fluctuation
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(showsIndicators: false) {
+            valuesView
+            chartView
+        }
+        .navigationTitle("BRL a EUR")
     }
+    
+    private var valuesView: some View {
+        HStack(alignment: .center, spacing: 8) {
+            Text(rateFluctuation.endRate.formatter(decimalPlaces: 4))
+                .font(.system(size: 28, weight: .bold))
+            
+            Text(rateFluctuation.changePct.toPercentage(with: true))
+                .font(.system(size: 18, weight: .semibold))
+                .foregroundColor(rateFluctuation.changePct.color)
+                .background(rateFluctuation.changePct.color.opacity(0.2))
+            
+            Text(rateFluctuation.change.formatter(decimalPlaces: 4, with: true))
+                .font(.system(size: 18, weight: .semibold))
+                .foregroundColor(rateFluctuation.change.color)
+            
+            Spacer()
+        }
+        .padding(.init(top: 8, leading: 8, bottom: 8, trailing: 8))
+    }
+    
+    private var chartView: some View {
+        VStack {
+            periodFilterView
+        }
+    }
+    
+    private var periodFilterView: some View {
+        HStack(spacing: 16) {            
+            Button {
+                print("1 dia")
+            } label: {
+                Text("1 dia")
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundColor(.blue)
+                    .underline()
+            }
+            
+            Button {
+                print("7 dia")
+            } label: {
+                Text("7 dia")
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundColor(.blue)
+                    .underline()
+            }
+            
+            Button {
+                print("1 mês")
+            } label: {
+                Text("1 mês")
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundColor(.blue)
+                    .underline()
+            }
+                        
+            Button {
+                print("6 mês")
+            } label: {
+                Text("6 mês")
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundColor(.blue)
+                    .underline()
+            }
+            
+            Button {
+                print("1 ano")
+            } label: {
+                Text("1 ano")
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundColor(.blue)
+                    .underline()
+            }
+            
+        }
+    }
+    
 }
 
 struct RateFluctuationDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        RateFluctuationDetailView()
+        RateFluctuationDetailView(
+            baseCurrency: "BRL",
+            rateFluctuation: Fluctuation(symbol: "EUR", change: 0.0003, changePct: 0.1651, endRate: 0.181353)
+        )
     }
 }
