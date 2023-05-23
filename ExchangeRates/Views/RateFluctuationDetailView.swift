@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Charts
 
 struct ChartComparation: Identifiable, Equatable {
     let id = UUID()
     var symbol: String
     var period: Date
-    var endDate: Double
+    var endRate: Double
 }
 
 class RateFluctuationViewModel: ObservableObject {
@@ -21,26 +22,30 @@ class RateFluctuationViewModel: ObservableObject {
         Fluctuation(symbol: "GBP", change: -0.0001, changePct: -0.0403, endRate: 0.158915)
     ]
     @Published var chartComparations: [ChartComparation] = [
-        ChartComparation(symbol: "USD", period: "2022-11-13".toDate(), endDate: 0.18857),
-        ChartComparation(symbol: "USD", period: "2022-11-12".toDate(), endDate: 0.018857),
-        ChartComparation(symbol: "USD", period: "2022-11-11".toDate(), endDate: 0.187786),
-        ChartComparation(symbol: "USD", period: "2022-11-10".toDate(), endDate: 0.187073)
+        ChartComparation(symbol: "USD", period: "2022-11-17".toDate(), endRate: 0.198057),
+        ChartComparation(symbol: "USD", period: "2022-11-16".toDate(), endRate: 0.199057),
+        ChartComparation(symbol: "USD", period: "2022-11-15".toDate(), endRate: 0.196857),
+        ChartComparation(symbol: "USD", period: "2022-11-14".toDate(), endRate: 0.198857),
+        ChartComparation(symbol: "USD", period: "2022-11-13".toDate(), endRate: 0.197786),
+        ChartComparation(symbol: "USD", period: "2022-11-12".toDate(), endRate: 0.199786),
+        ChartComparation(symbol: "USD", period: "2022-11-11".toDate(), endRate: 0.197073),
+        ChartComparation(symbol: "USD", period: "2022-11-10".toDate(), endRate: 0.194073)
     ]
     
     @Published var timeRange = TimeRangeEnum.today
     
     var hasRates: Bool {
-        return chartComparations.filter {$0.endDate > 0}.count > 0
+        return chartComparations.filter {$0.endRate > 0}.count > 0
     }
     
     var yAxisMin: Double {
-        let min = chartComparations.map { $0.endDate }.min() ?? 0.0
-        return (min - (min * 0.002))
+        let min = chartComparations.map { $0.endRate }.min() ?? 0.0
+        return (min - (min * 0.02))
     }
     
     var yAxisMax: Double {
-        let max = chartComparations.map { $0.endDate }.min() ?? 0.0
-        return (max + (max * 0.002))
+        let max = chartComparations.map { $0.endRate }.max() ?? 0.0
+        return (max + (max * 0.02))
     }
     
     func xAxisLabelFormatStyle(for date: Date) -> String {
@@ -72,7 +77,7 @@ struct RateFluctuationDetailView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             valuesView
-            chartView
+            graphicChartView
         }
         .navigationTitle("BRL a EUR")
     }
@@ -96,14 +101,17 @@ struct RateFluctuationDetailView: View {
         .padding(.init(top: 8, leading: 8, bottom: 8, trailing: 8))
     }
     
-    private var chartView: some View {
+    private var graphicChartView: some View {
         VStack {
             periodFilterView
+            lineChartView
         }
+        .padding(.top, 8)
+        .padding(.bottom, 8)
     }
     
     private var periodFilterView: some View {
-        HStack(spacing: 16) {            
+        HStack(spacing: 16) {
             Button {
                 print("1 dia")
             } label: {
@@ -150,6 +158,42 @@ struct RateFluctuationDetailView: View {
             }
             
         }
+    }
+    
+    private var lineChartView: some View {
+        Chart(viewModel.chartComparations) { item in
+            LineMark(
+                x: .value("Period", item.period),
+                y: .value("Rates", item.endRate)
+            )
+            .interpolationMethod(.catmullRom)
+            
+            if !viewModel.hasRates {
+                RuleMark(y: .value("Conversão Zero", 0))
+                    .annotation(position: .overlay, alignment: .center) {
+                        Text("Sem valores neste periodo")
+                            .font(.footnote)
+                            .padding()
+                            .background(Color(UIColor.systemBackground))
+                    }
+            }
+        }
+        .chartXAxis {
+            AxisMarks(preset: .aligned) { date in
+                AxisGridLine()
+                AxisValueLabel(viewModel.xAxisLabelFormatStyle(for: date.as(Date.self) ?? Date()))
+            }
+        }
+        .chartYAxis {
+            AxisMarks(position: .leading) { rate in
+                AxisGridLine()
+                AxisValueLabel(rate.as(Double.self)?.formatter(decimalPlaces: 3) ?? 0.0.formatter(decimalPlaces: 3))
+            }
+        }
+        .chartYScale(domain: viewModel.yAxisMin...viewModel.yAxisMax)
+        .frame(height: 260)
+        .padding(.trailing, 22)
+        .padding(.leading, 8)
     }
     
 }
