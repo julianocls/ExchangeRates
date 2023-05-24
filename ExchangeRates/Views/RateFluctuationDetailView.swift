@@ -78,7 +78,10 @@ struct RateFluctuationDetailView: View {
         ScrollView(showsIndicators: false) {
             valuesView
             graphicChartView
+            comparationView
         }
+        .padding(.leading, 8)
+        .padding(.trailing, 8)
         .navigationTitle("BRL a EUR")
     }
     
@@ -192,10 +195,64 @@ struct RateFluctuationDetailView: View {
         }
         .chartYScale(domain: viewModel.yAxisMin...viewModel.yAxisMax)
         .frame(height: 260)
-        .padding(.trailing, 22)
-        .padding(.leading, 8)
+        .padding(.trailing, 12)
     }
     
+    private var comparationView: some View {
+        VStack (spacing: 8) {
+            comparationButtonView
+            comparationScrollView
+            Spacer()
+        }
+        .padding(.top, 8)
+        .padding(.bottom, 8)
+    }
+    
+    private var comparationButtonView: some View {
+        Button {
+            print("comparar com")
+        } label: {
+            Image(systemName: "magnifyingglass")
+            Text("Comparar com")
+                .font(.system(size: 16))
+        }
+    }
+    
+    private var comparationScrollView: some View {
+        ScrollView(.horizontal, showsIndicators: false){
+            LazyHGrid(rows: [GridItem(.flexible())], alignment: .center) {
+                ForEach(viewModel.fluctuations) { fluctuation in
+                    Button {
+                        print("comparação")
+                    } label: {
+                        VStack (alignment: .leading, spacing: 4) {
+                            Text("\(fluctuation.symbol) / \(baseCurrency)")
+                                .font(.system(size: 14))
+                                .foregroundColor(.black)
+                            Text(fluctuation.endRate.formatter(decimalPlaces: 4))
+                                .font(.system(size: 14, weight: .semibold))
+                                .foregroundColor(.black)
+                            
+                            HStack (alignment: .bottom, spacing: 60) {
+                                Text(fluctuation.symbol)
+                                    .font(.system(size: 12, weight: .semibold))
+                                    .foregroundColor(.gray)
+                                Text(fluctuation.changePct.toPercentage())
+                                    .font(.system(size: 14, weight: .semibold))
+                                    .foregroundColor(fluctuation.changePct.color)
+                                    .frame(maxWidth: .infinity, alignment: .trailing)
+                            }
+                        }
+                        .padding(.init(top: 8, leading: 16, bottom: 8, trailing: 16))
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(.gray, lineWidth: 1)
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 struct RateFluctuationDetailView_Previews: PreviewProvider {
@@ -206,3 +263,4 @@ struct RateFluctuationDetailView_Previews: PreviewProvider {
         )
     }
 }
+
