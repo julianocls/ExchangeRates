@@ -26,6 +26,8 @@ class FluctuationViewModel: ObservableObject {
 struct RatesFluctuationView: View {
     @StateObject var viewModel = FluctuationViewModel()
     @State private var searchText = ""
+    @State private var isPresentedBaseCurrencyFilterView = false
+    @State private var isPresentedMultiCurrencyFilterView = false
     
     var searchResult: [Fluctuation] {
         if searchText.isEmpty {
@@ -51,9 +53,12 @@ struct RatesFluctuationView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 Button {
-                    print("Filtrando moedas")
+                    isPresentedMultiCurrencyFilterView.toggle()
                 } label: {
                     Image(systemName: "slider.horizontal.3")
+                }
+                .fullScreenCover(isPresented: $isPresentedMultiCurrencyFilterView) {
+                    MultiCurrenciesFilterView()
                 }
             }
         }
@@ -62,7 +67,7 @@ struct RatesFluctuationView: View {
     private var baseCurrencyPeriodFilterView: some View {
         HStack(alignment: .center, spacing: 16) {
             Button {
-                print("Filtrando moeda base")
+                isPresentedBaseCurrencyFilterView.toggle()
             } label: {
                 Text("BRL")
                     .font(.system(size: 14, weight: .bold))
@@ -73,6 +78,9 @@ struct RatesFluctuationView: View {
                             .stroke(.white, lineWidth: 1)
                     }
             }
+            .fullScreenCover(isPresented: $isPresentedBaseCurrencyFilterView, content: {
+                BaseCurrencyFilterView()
+            })
             .background(Color(UIColor.lightGray))
             .cornerRadius(8)
             

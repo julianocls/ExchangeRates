@@ -13,6 +13,8 @@
 		61162B442A03556100F3C97D /* BaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61162B432A03556100F3C97D /* BaseStore.swift */; };
 		61162B462A0359D800F3C97D /* RatesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61162B452A0359D800F3C97D /* RatesStore.swift */; };
 		61162B482A035FDE00F3C97D /* CurrencyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61162B472A035FDE00F3C97D /* CurrencyStore.swift */; };
+		612A62E02A26DB250013C3C6 /* BaseCurrencyFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612A62DF2A26DB250013C3C6 /* BaseCurrencyFilterView.swift */; };
+		612A62E22A26DB560013C3C6 /* MultiCurrenciesFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612A62E12A26DB560013C3C6 /* MultiCurrenciesFilterView.swift */; };
 		613ED35A2A0499A600A2911C /* DataProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613ED3592A0499A600A2911C /* DataProviderManager.swift */; };
 		613ED35C2A049BB800A2911C /* RatesFluctuationDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613ED35B2A049BB800A2911C /* RatesFluctuationDataProvider.swift */; };
 		613ED35E2A049DE000A2911C /* RatesHistoricalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613ED35D2A049DE000A2911C /* RatesHistoricalDataProvider.swift */; };
@@ -37,6 +39,8 @@
 		61162B432A03556100F3C97D /* BaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStore.swift; sourceTree = "<group>"; };
 		61162B452A0359D800F3C97D /* RatesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesStore.swift; sourceTree = "<group>"; };
 		61162B472A035FDE00F3C97D /* CurrencyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyStore.swift; sourceTree = "<group>"; };
+		612A62DF2A26DB250013C3C6 /* BaseCurrencyFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCurrencyFilterView.swift; sourceTree = "<group>"; };
+		612A62E12A26DB560013C3C6 /* MultiCurrenciesFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCurrenciesFilterView.swift; sourceTree = "<group>"; };
 		613ED3592A0499A600A2911C /* DataProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManager.swift; sourceTree = "<group>"; };
 		613ED35B2A049BB800A2911C /* RatesFluctuationDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesFluctuationDataProvider.swift; sourceTree = "<group>"; };
 		613ED35D2A049DE000A2911C /* RatesHistoricalDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesHistoricalDataProvider.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				61FEE01D29FF6EF8002EDA69 /* ContentView.swift */,
 				6184A8632A1469AB00AA269B /* RateFluctuationDetailView.swift */,
 				61DBDC7D2A0B36E700E2BB23 /* RatesFluctuationView.swift */,
+				612A62DF2A26DB250013C3C6 /* BaseCurrencyFilterView.swift */,
+				612A62E12A26DB560013C3C6 /* MultiCurrenciesFilterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 				61FEE01E29FF6EF8002EDA69 /* ContentView.swift in Sources */,
 				61162B3E2A03517100F3C97D /* FluctuationObject.swift in Sources */,
 				61FEE01C29FF6EF8002EDA69 /* ExchangeRatesApp.swift in Sources */,
+				612A62E02A26DB250013C3C6 /* BaseCurrencyFilterView.swift in Sources */,
 				613ED35E2A049DE000A2911C /* RatesHistoricalDataProvider.swift in Sources */,
 				61162B422A03539600F3C97D /* RatesHistoricalObject.swift in Sources */,
 				61162B462A0359D800F3C97D /* RatesStore.swift in Sources */,
@@ -287,6 +294,7 @@
 				6184A8662A146F4100AA269B /* TimeRangeEnum.swift in Sources */,
 				613ED35C2A049BB800A2911C /* RatesFluctuationDataProvider.swift in Sources */,
 				61162B482A035FDE00F3C97D /* CurrencyStore.swift in Sources */,
+				612A62E22A26DB560013C3C6 /* MultiCurrenciesFilterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
