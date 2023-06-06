@@ -8,28 +8,21 @@
 import SwiftUI
 import Charts
 
-struct ChartComparation: Identifiable, Equatable {
-    let id = UUID()
-    var symbol: String
-    var period: Date
-    var endRate: Double
-}
-
 class RateFluctuationViewModel: ObservableObject {
-    @Published var fluctuations: [Fluctuation] = [
-        Fluctuation(symbol: "JPY", change: 0.0008, changePct: 0.0005, endRate: 0.007242),
-        Fluctuation(symbol: "EUR", change: 0.0003, changePct: 0.1651, endRate: 0.181353),
-        Fluctuation(symbol: "GBP", change: -0.0001, changePct: -0.0403, endRate: 0.158915)
+    @Published var fluctuations: [RateFluctuationModel] = [
+        RateFluctuationModel(symbol: "JPY", change: 0.0008, changePct: 0.0005, endRate: 0.007242),
+        RateFluctuationModel(symbol: "EUR", change: 0.0003, changePct: 0.1651, endRate: 0.181353),
+        RateFluctuationModel(symbol: "GBP", change: -0.0001, changePct: -0.0403, endRate: 0.158915)
     ]
-    @Published var chartComparations: [ChartComparation] = [
-        ChartComparation(symbol: "USD", period: "2022-11-17".toDate(), endRate: 0.198057),
-        ChartComparation(symbol: "USD", period: "2022-11-16".toDate(), endRate: 0.199057),
-        ChartComparation(symbol: "USD", period: "2022-11-15".toDate(), endRate: 0.196857),
-        ChartComparation(symbol: "USD", period: "2022-11-14".toDate(), endRate: 0.198857),
-        ChartComparation(symbol: "USD", period: "2022-11-13".toDate(), endRate: 0.197786),
-        ChartComparation(symbol: "USD", period: "2022-11-12".toDate(), endRate: 0.199786),
-        ChartComparation(symbol: "USD", period: "2022-11-11".toDate(), endRate: 0.197073),
-        ChartComparation(symbol: "USD", period: "2022-11-10".toDate(), endRate: 0.194073)
+    @Published var chartComparations: [RateHistoricalModel] = [
+        RateHistoricalModel(symbol: "USD", period: "2022-11-17".toDate(), endRate: 0.198057),
+        RateHistoricalModel(symbol: "USD", period: "2022-11-16".toDate(), endRate: 0.199057),
+        RateHistoricalModel(symbol: "USD", period: "2022-11-15".toDate(), endRate: 0.196857),
+        RateHistoricalModel(symbol: "USD", period: "2022-11-14".toDate(), endRate: 0.198857),
+        RateHistoricalModel(symbol: "USD", period: "2022-11-13".toDate(), endRate: 0.197786),
+        RateHistoricalModel(symbol: "USD", period: "2022-11-12".toDate(), endRate: 0.199786),
+        RateHistoricalModel(symbol: "USD", period: "2022-11-11".toDate(), endRate: 0.197073),
+        RateHistoricalModel(symbol: "USD", period: "2022-11-10".toDate(), endRate: 0.194073)
     ]
     
     @Published var timeRange = TimeRangeEnum.today
@@ -57,11 +50,11 @@ class RateFluctuationViewModel: ObservableObject {
         }
     }
     
-    func addFluctuation(fluctuation: Fluctuation) {
+    func addFluctuation(fluctuation: RateFluctuationModel) {
         fluctuations.insert(fluctuation, at: 0)
     }
     
-    func removeFluctuations(fluctuation: Fluctuation) {
+    func removeFluctuations(fluctuation: RateFluctuationModel) {
         if let index = fluctuations.firstIndex(of: fluctuation) {
             fluctuations.remove(at: index)
         }
@@ -71,7 +64,7 @@ class RateFluctuationViewModel: ObservableObject {
 struct RateFluctuationDetailView: View {
     @StateObject var viewModel = RateFluctuationViewModel()
     @State var baseCurrency: String
-    @State var rateFluctuation: Fluctuation
+    @State var rateFluctuation: RateFluctuationModel
     @State private var isPresentedBaseCurrencyFilterView = false
 
     
@@ -263,7 +256,7 @@ struct RateFluctuationDetailView_Previews: PreviewProvider {
     static var previews: some View {
         RateFluctuationDetailView(
             baseCurrency: "BRL",
-            rateFluctuation: Fluctuation(symbol: "EUR", change: 0.0003, changePct: 0.1651, endRate: 0.181353)
+            rateFluctuation: RateFluctuationModel(symbol: "EUR", change: 0.0003, changePct: 0.1651, endRate: 0.181353)
         )
     }
 }

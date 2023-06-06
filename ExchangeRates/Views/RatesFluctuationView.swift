@@ -7,19 +7,11 @@
 
 import SwiftUI
 
-struct Fluctuation: Identifiable, Equatable {
-    let id = UUID()
-    var symbol: String
-    var change: Double
-    var changePct: Double
-    var endRate: Double
-}
-
 class FluctuationViewModel: ObservableObject {
-    @Published var fluctuations: [Fluctuation] = [
-        Fluctuation(symbol: "USD", change: 0.0008, changePct: 0.4175, endRate: 0.18857),
-        Fluctuation(symbol: "EUR", change: 0.0003, changePct: 0.1651,  endRate: 0.181353),
-        Fluctuation(symbol: "GBP", change: -0.0001, changePct: -0.0403, endRate: 0.158915)
+    @Published var fluctuations: [RateFluctuationModel] = [
+        RateFluctuationModel(symbol: "USD", change: 0.0008, changePct: 0.4175, endRate: 0.18857),
+        RateFluctuationModel(symbol: "EUR", change: 0.0003, changePct: 0.1651,  endRate: 0.181353),
+        RateFluctuationModel(symbol: "GBP", change: -0.0001, changePct: -0.0403, endRate: 0.158915)
     ]
 }
 
@@ -29,7 +21,7 @@ struct RatesFluctuationView: View {
     @State private var isPresentedBaseCurrencyFilterView = false
     @State private var isPresentedMultiCurrencyFilterView = false
     
-    var searchResult: [Fluctuation] {
+    var searchResult: [RateFluctuationModel] {
         if searchText.isEmpty {
             return viewModel.fluctuations
         }
