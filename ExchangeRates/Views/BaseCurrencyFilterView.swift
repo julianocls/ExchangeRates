@@ -4,7 +4,6 @@
 //
 //  Created by Juliano Santos on 30/5/23.
 //
-
 import SwiftUI
 
 struct BaseCurrencyFilterView: View {
@@ -29,14 +28,14 @@ struct BaseCurrencyFilterView: View {
 
     var body: some View {
         NavigationView {
-            listCurenciesView
+            listCurrenciesView
         }
         .onAppear {
             viewModel.doFetchCurrencySymbol()
         }
     }
 
-    private var listCurenciesView: some View {
+    private var listCurrenciesView: some View {
         List(searchResults, id: \.symbol, selection: $selection) { item in
             HStack {
                 Text(item.symbol)

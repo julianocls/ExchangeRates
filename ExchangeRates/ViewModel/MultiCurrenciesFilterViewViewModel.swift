@@ -1,14 +1,14 @@
 //
-//  BaseCurrencyFilterView.swift
+//  MultiCurrenciesFilterViewViewModel.swift
 //  ExchangeRates
 //
-//  Created by Juliano Santos on 5/6/23.
+//  Created by Juliano Santos on 29/6/23.
 //
 
 import Foundation
 import SwiftUI
 
-extension BaseCurrencyFilterView {
+extension MultiCurrenciesFilterView {
     @MainActor class ViewModel: ObservableObject, CurrencySymbolsDataProviderDelegate {
         @Published var currencySymbols = [CurrencySymbolModel]()
         
