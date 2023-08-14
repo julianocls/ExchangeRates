@@ -7,15 +7,21 @@
 
 import SwiftUI
 
+protocol MultiCurrenciesFilterViewDelegate {
+    func didSelected(_ currencies: [String])
+}
+
 struct MultiCurrenciesFilterView: View {
-
+    
     @Environment(\.dismiss) var dismiss
-
+    
     @StateObject var viewModel = ViewModel()
-
+    
     @State private var searchText = ""
     @State private var selections: [String] = []
-
+    
+    var delegate: MultiCurrenciesFilterViewDelegate?
+    
     var searchResults: [CurrencySymbolModel] {
         if searchText.isEmpty {
             return viewModel.currencySymbols
@@ -26,16 +32,16 @@ struct MultiCurrenciesFilterView: View {
             }
         }
     }
-
+    
     var body: some View {
         NavigationView {
             listCurenciesView
         }
         .onAppear {
-            viewModel.doFetchCurrencySymbol()
+            viewModel.doFetchCurrencySymbols()
         }
     }
-
+    
     private var listCurenciesView: some View {
         List(searchResults, id: \.symbol) { item in
             Button {
@@ -67,9 +73,10 @@ struct MultiCurrenciesFilterView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             Button {
+                delegate?.didSelected(selections)
                 dismiss()
             } label: {
-                Text("OK")
+                Text(selections.isEmpty ? "Cancelar" : "OK")
                     .fontWeight(.bold)
             }
         }

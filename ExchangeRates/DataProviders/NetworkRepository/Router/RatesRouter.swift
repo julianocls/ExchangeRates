@@ -10,7 +10,7 @@ import Foundation
 enum RatesRouter {
     
     case fluctuation(base: String, symbols: [String], startDate: String, endDate: String)
-    case timeseries(base: String, symbols: [String], startDate: String, endDate: String)
+    case timeseries(base: String, symbol: String, startDate: String, endDate: String)
     
     var path: String {
         switch self {
@@ -26,9 +26,19 @@ enum RatesRouter {
         
         switch self {
         case .fluctuation(let base, let symbols, let startDate, let endDate):
-            setUrlQueryItems(&url, base, symbols, startDate, endDate)
-        case .timeseries(let base, let symbols, let startDate, let endDate):
-            setUrlQueryItems(&url, base, symbols, startDate, endDate)
+            url.append(queryItems: [
+                URLQueryItem(name: "base", value: base),
+                URLQueryItem(name: "symbols", value: symbols.joined(separator: ",")),
+                URLQueryItem(name: "start_date", value: startDate),
+                URLQueryItem(name: "end_date", value: endDate)
+            ])
+        case .timeseries(let base, let symbol, let startDate, let endDate):
+            url.append(queryItems: [
+                URLQueryItem(name: "base", value: base),
+                URLQueryItem(name: "symbols", value: symbol),
+                URLQueryItem(name: "start_date", value: startDate),
+                URLQueryItem(name: "end_date", value: endDate)
+            ])
         }
         
         var request = URLRequest(url: url.appendingPathComponent(path), timeoutInterval: Double.infinity)
@@ -37,12 +47,5 @@ enum RatesRouter {
         return request
     }
     
-    fileprivate func setUrlQueryItems(_ url: inout URL, _ base: String, _ symbols: [String], _ startDate: String, _ endDate: String) {
-        url.append(queryItems: [
-            URLQueryItem(name: "base", value: base),
-            URLQueryItem(name: "symbols", value: symbols.joined(separator: ",")),
-            URLQueryItem(name: "start_date", value: startDate),
-            URLQueryItem(name: "end_date", value: endDate)
-        ])
-    }
+
 }

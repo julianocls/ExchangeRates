@@ -19,14 +19,14 @@ extension MultiCurrenciesFilterView {
             self.dataProvider?.delegate = self
         }
         
-        func doFetchCurrencySymbol() {
+        func doFetchCurrencySymbols() {
             dataProvider?.fetchSymbols()
         }
         
         nonisolated func success(model: [CurrencySymbolModel]) {
             DispatchQueue.main.async {
                 withAnimation {
-                    self.currencySymbols = model.sorted {$0.symbol < $1.symbol}
+                    self.currencySymbols = model.sorted { $0.symbol < $1.symbol }
                 }
             }
         }

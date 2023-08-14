@@ -4,17 +4,24 @@
 //
 //  Created by Juliano Santos on 30/5/23.
 //
+
 import SwiftUI
 
+protocol BaseCurrencyFilterViewDelegate {
+    func didSelected(_ baseCurrency: String)
+}
+
 struct BaseCurrencyFilterView: View {
-
+    
     @Environment(\.dismiss) var dismiss
-
+    
     @StateObject var viewModel = ViewModel()
-
+    
     @State private var searchText = ""
     @State private var selection: String?
-
+    
+    var delegate: BaseCurrencyFilterViewDelegate?
+    
     var searchResults: [CurrencySymbolModel] {
         if searchText.isEmpty {
             return viewModel.currencySymbols
@@ -25,17 +32,17 @@ struct BaseCurrencyFilterView: View {
             }
         }
     }
-
+    
     var body: some View {
         NavigationView {
-            listCurrenciesView
+            listCurenciesView
         }
         .onAppear {
-            viewModel.doFetchCurrencySymbol()
+            viewModel.doFetchCurrencySymbols()
         }
     }
-
-    private var listCurrenciesView: some View {
+    
+    private var listCurenciesView: some View {
         List(searchResults, id: \.symbol, selection: $selection) { item in
             HStack {
                 Text(item.symbol)
@@ -51,6 +58,9 @@ struct BaseCurrencyFilterView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             Button {
+                if let selection {
+                    delegate?.didSelected(selection)
+                }
                 dismiss()
             } label: {
                 Text("OK")
