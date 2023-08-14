@@ -2,7 +2,7 @@
 //  ExchangeRatesApp.swift
 //  ExchangeRates
 //
-//  Created by Juliano Santos on 1/5/23.
+//  Created by Juliano Santos on 15/08/23
 //
 
 import SwiftUI

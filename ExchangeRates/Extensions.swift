@@ -2,7 +2,7 @@
 //  Extensions.swift
 //  ExchangeRates
 //
-//  Created by Juliano Santos on 10/5/23.
+//  Created by Juliano Santos on 15/08/23
 //
 
 import Foundation

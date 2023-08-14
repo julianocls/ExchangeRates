@@ -7,76 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61162B3E2A03517100F3C97D /* FluctuationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61162B3D2A03517100F3C97D /* FluctuationObject.swift */; };
-		61162B402A03531300F3C97D /* CurrencySymbolObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61162B3F2A03531300F3C97D /* CurrencySymbolObject.swift */; };
-		61162B422A03539600F3C97D /* RatesHistoricalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61162B412A03539600F3C97D /* RatesHistoricalObject.swift */; };
-		61162B442A03556100F3C97D /* BaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61162B432A03556100F3C97D /* BaseStore.swift */; };
-		61162B462A0359D800F3C97D /* RatesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61162B452A0359D800F3C97D /* RatesStore.swift */; };
-		61162B482A035FDE00F3C97D /* CurrencyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61162B472A035FDE00F3C97D /* CurrencyStore.swift */; };
-		612A62E02A26DB250013C3C6 /* BaseCurrencyFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612A62DF2A26DB250013C3C6 /* BaseCurrencyFilterView.swift */; };
-		612A62E22A26DB560013C3C6 /* MultiCurrenciesFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612A62E12A26DB560013C3C6 /* MultiCurrenciesFilterView.swift */; };
-		6136633E2A2ED47E00A96112 /* RateFluctuationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6136633D2A2ED47E00A96112 /* RateFluctuationModel.swift */; };
-		613663402A2ED52E00A96112 /* CurrencySymbolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6136633F2A2ED52E00A96112 /* CurrencySymbolModel.swift */; };
-		613663422A2ED5A700A96112 /* RateHistoricalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613663412A2ED5A700A96112 /* RateHistoricalModel.swift */; };
-		613663452A2ED81800A96112 /* BaseCurrencyFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613663442A2ED81800A96112 /* BaseCurrencyFilterViewModel.swift */; };
-		613ED35A2A0499A600A2911C /* DataProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613ED3592A0499A600A2911C /* DataProviderManager.swift */; };
-		613ED35C2A049BB800A2911C /* RatesFluctuationDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613ED35B2A049BB800A2911C /* RatesFluctuationDataProvider.swift */; };
-		613ED35E2A049DE000A2911C /* RatesHistoricalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613ED35D2A049DE000A2911C /* RatesHistoricalDataProvider.swift */; };
-		613ED3622A049F6700A2911C /* CurrencySimbolsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613ED3612A049F6700A2911C /* CurrencySimbolsDataProvider.swift */; };
-		615576B62A4DDDA5009F98B2 /* MultiCurrenciesFilterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615576B52A4DDDA5009F98B2 /* MultiCurrenciesFilterViewViewModel.swift */; };
-		615576B82A4DFB61009F98B2 /* RatesFluctuationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615576B72A4DFB61009F98B2 /* RatesFluctuationViewModel.swift */; };
-		6184A8642A1469AB00AA269B /* RateFluctuationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6184A8632A1469AB00AA269B /* RateFluctuationDetailView.swift */; };
-		6184A8662A146F4100AA269B /* TimeRangeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6184A8652A146F4100AA269B /* TimeRangeEnum.swift */; };
-		619C27652A70464B00BD6225 /* RateFluctuationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C27642A70464B00BD6225 /* RateFluctuationDetailViewModel.swift */; };
-		61D6A5AC2A0004A60000F0B0 /* RatesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6A5AB2A0004A60000F0B0 /* RatesApi.swift */; };
-		61D6A5AF2A000C5D0000F0B0 /* RatesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6A5AE2A000C5D0000F0B0 /* RatesRouter.swift */; };
-		61D6A5B12A000C7B0000F0B0 /* CurrencyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6A5B02A000C7B0000F0B0 /* CurrencyRouter.swift */; };
-		61DA5B832A8AB1D700878CFB /* RateFluctuationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DA5B822A8AB1D700878CFB /* RateFluctuationDetailViewModel.swift */; };
-		61DBDC7E2A0B36E700E2BB23 /* RatesFluctuationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DBDC7D2A0B36E700E2BB23 /* RatesFluctuationView.swift */; };
-		61DBDC802A0B417F00E2BB23 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DBDC7F2A0B417F00E2BB23 /* Extensions.swift */; };
-		61FEE01C29FF6EF8002EDA69 /* ExchangeRatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FEE01B29FF6EF8002EDA69 /* ExchangeRatesApp.swift */; };
-		61FEE01E29FF6EF8002EDA69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FEE01D29FF6EF8002EDA69 /* ContentView.swift */; };
-		61FEE02029FF6EFB002EDA69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FEE01F29FF6EFB002EDA69 /* Assets.xcassets */; };
-		61FEE02329FF6EFB002EDA69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FEE02229FF6EFB002EDA69 /* Preview Assets.xcassets */; };
+		6DC539ED2923FE36006607A4 /* ExchangeRatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC539EC2923FE36006607A4 /* ExchangeRatesApp.swift */; };
+		6DC539EF2923FE36006607A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC539EE2923FE36006607A4 /* ContentView.swift */; };
+		6DC539F12923FE39006607A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC539F02923FE39006607A4 /* Assets.xcassets */; };
+		6DC539F42923FE39006607A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC539F32923FE39006607A4 /* Preview Assets.xcassets */; };
+		6DC539FE2923FFAD006607A4 /* RatesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC539FD2923FFAD006607A4 /* RatesApi.swift */; };
+		6DC53A0129240072006607A4 /* RatesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A0029240072006607A4 /* RatesRouter.swift */; };
+		6DC53A032924007C006607A4 /* CurrencyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A022924007C006607A4 /* CurrencyRouter.swift */; };
+		6DC53A06292403D8006607A4 /* GenericStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A05292403D8006607A4 /* GenericStore.swift */; };
+		6DC53A0B292405E2006607A4 /* CurrencySymbolObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A0A292405E2006607A4 /* CurrencySymbolObject.swift */; };
+		6DC53A0F2924080E006607A4 /* RatesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A0E2924080E006607A4 /* RatesStore.swift */; };
+		6DC53A11292408F9006607A4 /* CurrencyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A10292408F9006607A4 /* CurrencyStore.swift */; };
+		6DC53A1629240A7C006607A4 /* RatesFluctuationDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A1529240A7C006607A4 /* RatesFluctuationDataProvider.swift */; };
+		6DC53A1829240B4F006607A4 /* RatesHistoricalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A1729240B4F006607A4 /* RatesHistoricalDataProvider.swift */; };
+		6DC53A1B29240BA0006607A4 /* CurrencySymbolsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A1A29240BA0006607A4 /* CurrencySymbolsDataProvider.swift */; };
+		6DC53A1E292410EF006607A4 /* RatesFluctuationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A1D292410EF006607A4 /* RatesFluctuationView.swift */; };
+		6DC53A202924168E006607A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A1F2924168E006607A4 /* Extensions.swift */; };
+		6DC53A2429241C51006607A4 /* RateFluctuationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A2329241C51006607A4 /* RateFluctuationDetailView.swift */; };
+		6DC53A2729241D7E006607A4 /* TimeRangeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A2629241D7E006607A4 /* TimeRangeEnum.swift */; };
+		6DC53A2929242C15006607A4 /* BaseCurrencyFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A2829242C15006607A4 /* BaseCurrencyFilterView.swift */; };
+		6DC53A2B29242C23006607A4 /* MultiCurrenciesFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A2A29242C23006607A4 /* MultiCurrenciesFilterView.swift */; };
+		6DC53A2D29243334006607A4 /* RateFluctuationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A2C29243334006607A4 /* RateFluctuationModel.swift */; };
+		6DC53A2F292433A8006607A4 /* CurrencySymbolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A2E292433A8006607A4 /* CurrencySymbolModel.swift */; };
+		6DC53A31292433DB006607A4 /* RateHistoricalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A30292433DB006607A4 /* RateHistoricalModel.swift */; };
+		6DC53A3429243444006607A4 /* BaseCurrencyFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A3329243444006607A4 /* BaseCurrencyFilterViewModel.swift */; };
+		6DC53A3629243694006607A4 /* MultiCurrenciesFilterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A3529243694006607A4 /* MultiCurrenciesFilterViewViewModel.swift */; };
+		6DC53A38292437A4006607A4 /* RatesFluctuationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A37292437A4006607A4 /* RatesFluctuationViewModel.swift */; };
+		6DC53A3A29243EC3006607A4 /* RateFluctuationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC53A3929243EC3006607A4 /* RateFluctuationDetailViewModel.swift */; };
+		6DCA1F982924713C00813B2A /* RateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA1F972924713C00813B2A /* RateObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		61162B3D2A03517100F3C97D /* FluctuationObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluctuationObject.swift; sourceTree = "<group>"; };
-		61162B3F2A03531300F3C97D /* CurrencySymbolObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbolObject.swift; sourceTree = "<group>"; };
-		61162B412A03539600F3C97D /* RatesHistoricalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesHistoricalObject.swift; sourceTree = "<group>"; };
-		61162B432A03556100F3C97D /* BaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStore.swift; sourceTree = "<group>"; };
-		61162B452A0359D800F3C97D /* RatesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesStore.swift; sourceTree = "<group>"; };
-		61162B472A035FDE00F3C97D /* CurrencyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyStore.swift; sourceTree = "<group>"; };
-		612A62DF2A26DB250013C3C6 /* BaseCurrencyFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCurrencyFilterView.swift; sourceTree = "<group>"; };
-		612A62E12A26DB560013C3C6 /* MultiCurrenciesFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCurrenciesFilterView.swift; sourceTree = "<group>"; };
-		6136633D2A2ED47E00A96112 /* RateFluctuationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateFluctuationModel.swift; sourceTree = "<group>"; };
-		6136633F2A2ED52E00A96112 /* CurrencySymbolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbolModel.swift; sourceTree = "<group>"; };
-		613663412A2ED5A700A96112 /* RateHistoricalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateHistoricalModel.swift; sourceTree = "<group>"; };
-		613663442A2ED81800A96112 /* BaseCurrencyFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCurrencyFilterViewModel.swift; sourceTree = "<group>"; };
-		613ED3592A0499A600A2911C /* DataProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManager.swift; sourceTree = "<group>"; };
-		613ED35B2A049BB800A2911C /* RatesFluctuationDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesFluctuationDataProvider.swift; sourceTree = "<group>"; };
-		613ED35D2A049DE000A2911C /* RatesHistoricalDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesHistoricalDataProvider.swift; sourceTree = "<group>"; };
-		613ED3612A049F6700A2911C /* CurrencySimbolsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySimbolsDataProvider.swift; sourceTree = "<group>"; };
-		615576B52A4DDDA5009F98B2 /* MultiCurrenciesFilterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCurrenciesFilterViewViewModel.swift; sourceTree = "<group>"; };
-		615576B72A4DFB61009F98B2 /* RatesFluctuationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesFluctuationViewModel.swift; sourceTree = "<group>"; };
-		6184A8632A1469AB00AA269B /* RateFluctuationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateFluctuationDetailView.swift; sourceTree = "<group>"; };
-		6184A8652A146F4100AA269B /* TimeRangeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRangeEnum.swift; sourceTree = "<group>"; };
-		619C27642A70464B00BD6225 /* RateFluctuationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateFluctuationDetailViewModel.swift; sourceTree = "<group>"; };
-		61D6A5AB2A0004A60000F0B0 /* RatesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesApi.swift; sourceTree = "<group>"; };
-		61D6A5AE2A000C5D0000F0B0 /* RatesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesRouter.swift; sourceTree = "<group>"; };
-		61D6A5B02A000C7B0000F0B0 /* CurrencyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRouter.swift; sourceTree = "<group>"; };
-		61DA5B822A8AB1D700878CFB /* RateFluctuationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateFluctuationDetailViewModel.swift; sourceTree = "<group>"; };
-		61DBDC7D2A0B36E700E2BB23 /* RatesFluctuationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesFluctuationView.swift; sourceTree = "<group>"; };
-		61DBDC7F2A0B417F00E2BB23 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		61FEE01829FF6EF8002EDA69 /* ExchangeRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		61FEE01B29FF6EF8002EDA69 /* ExchangeRatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApp.swift; sourceTree = "<group>"; };
-		61FEE01D29FF6EF8002EDA69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		61FEE01F29FF6EFB002EDA69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		61FEE02229FF6EFB002EDA69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6DC539E92923FE36006607A4 /* ExchangeRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC539EC2923FE36006607A4 /* ExchangeRatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApp.swift; sourceTree = "<group>"; };
+		6DC539EE2923FE36006607A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6DC539F02923FE39006607A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DC539F32923FE39006607A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6DC539FD2923FFAD006607A4 /* RatesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesApi.swift; sourceTree = "<group>"; };
+		6DC53A0029240072006607A4 /* RatesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesRouter.swift; sourceTree = "<group>"; };
+		6DC53A022924007C006607A4 /* CurrencyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRouter.swift; sourceTree = "<group>"; };
+		6DC53A05292403D8006607A4 /* GenericStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericStore.swift; sourceTree = "<group>"; };
+		6DC53A0A292405E2006607A4 /* CurrencySymbolObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbolObject.swift; sourceTree = "<group>"; };
+		6DC53A0E2924080E006607A4 /* RatesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesStore.swift; sourceTree = "<group>"; };
+		6DC53A10292408F9006607A4 /* CurrencyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyStore.swift; sourceTree = "<group>"; };
+		6DC53A1529240A7C006607A4 /* RatesFluctuationDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesFluctuationDataProvider.swift; sourceTree = "<group>"; };
+		6DC53A1729240B4F006607A4 /* RatesHistoricalDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesHistoricalDataProvider.swift; sourceTree = "<group>"; };
+		6DC53A1A29240BA0006607A4 /* CurrencySymbolsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbolsDataProvider.swift; sourceTree = "<group>"; };
+		6DC53A1D292410EF006607A4 /* RatesFluctuationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesFluctuationView.swift; sourceTree = "<group>"; };
+		6DC53A1F2924168E006607A4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6DC53A2329241C51006607A4 /* RateFluctuationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateFluctuationDetailView.swift; sourceTree = "<group>"; };
+		6DC53A2629241D7E006607A4 /* TimeRangeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRangeEnum.swift; sourceTree = "<group>"; };
+		6DC53A2829242C15006607A4 /* BaseCurrencyFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCurrencyFilterView.swift; sourceTree = "<group>"; };
+		6DC53A2A29242C23006607A4 /* MultiCurrenciesFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCurrenciesFilterView.swift; sourceTree = "<group>"; };
+		6DC53A2C29243334006607A4 /* RateFluctuationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateFluctuationModel.swift; sourceTree = "<group>"; };
+		6DC53A2E292433A8006607A4 /* CurrencySymbolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbolModel.swift; sourceTree = "<group>"; };
+		6DC53A30292433DB006607A4 /* RateHistoricalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateHistoricalModel.swift; sourceTree = "<group>"; };
+		6DC53A3329243444006607A4 /* BaseCurrencyFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCurrencyFilterViewModel.swift; sourceTree = "<group>"; };
+		6DC53A3529243694006607A4 /* MultiCurrenciesFilterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCurrenciesFilterViewViewModel.swift; sourceTree = "<group>"; };
+		6DC53A37292437A4006607A4 /* RatesFluctuationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesFluctuationViewModel.swift; sourceTree = "<group>"; };
+		6DC53A3929243EC3006607A4 /* RateFluctuationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateFluctuationDetailViewModel.swift; sourceTree = "<group>"; };
+		6DCA1F972924713C00813B2A /* RateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		61FEE01529FF6EF8002EDA69 /* Frameworks */ = {
+		6DC539E62923FE36006607A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,166 +80,163 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		61162B3B2A03511D00F3C97D /* Objects */ = {
+		6DC539E02923FE36006607A4 = {
 			isa = PBXGroup;
 			children = (
-				61162B3D2A03517100F3C97D /* FluctuationObject.swift */,
-				61162B3F2A03531300F3C97D /* CurrencySymbolObject.swift */,
-				61162B412A03539600F3C97D /* RatesHistoricalObject.swift */,
-			);
-			path = Objects;
-			sourceTree = "<group>";
-		};
-		61162B3C2A03512B00F3C97D /* Stores */ = {
-			isa = PBXGroup;
-			children = (
-				61162B432A03556100F3C97D /* BaseStore.swift */,
-				61162B452A0359D800F3C97D /* RatesStore.swift */,
-				61162B472A035FDE00F3C97D /* CurrencyStore.swift */,
-			);
-			path = Stores;
-			sourceTree = "<group>";
-		};
-		613663432A2ED61C00A96112 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				613663442A2ED81800A96112 /* BaseCurrencyFilterViewModel.swift */,
-				615576B72A4DFB61009F98B2 /* RatesFluctuationViewModel.swift */,
-				61DA5B822A8AB1D700878CFB /* RateFluctuationDetailViewModel.swift */,
-				615576B52A4DDDA5009F98B2 /* MultiCurrenciesFilterViewViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		613ED35F2A049EFA00A2911C /* RatesDataProvider */ = {
-			isa = PBXGroup;
-			children = (
-				613ED35B2A049BB800A2911C /* RatesFluctuationDataProvider.swift */,
-				613ED35D2A049DE000A2911C /* RatesHistoricalDataProvider.swift */,
-			);
-			path = RatesDataProvider;
-			sourceTree = "<group>";
-		};
-		613ED3602A049F2100A2911C /* CurrencySymbolsDataProvider */ = {
-			isa = PBXGroup;
-			children = (
-				613ED3612A049F6700A2911C /* CurrencySimbolsDataProvider.swift */,
-			);
-			path = CurrencySymbolsDataProvider;
-			sourceTree = "<group>";
-		};
-		6184A8672A1471E900AA269B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				6184A8652A146F4100AA269B /* TimeRangeEnum.swift */,
-				6136633F2A2ED52E00A96112 /* CurrencySymbolModel.swift */,
-				613663412A2ED5A700A96112 /* RateHistoricalModel.swift */,
-				6136633D2A2ED47E00A96112 /* RateFluctuationModel.swift */,
-				619C27642A70464B00BD6225 /* RateFluctuationDetailViewModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		61D6A5AD2A000C360000F0B0 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				61D6A5AE2A000C5D0000F0B0 /* RatesRouter.swift */,
-				61D6A5B02A000C7B0000F0B0 /* CurrencyRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		61DBDC7C2A0B36A200E2BB23 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				61FEE01D29FF6EF8002EDA69 /* ContentView.swift */,
-				6184A8632A1469AB00AA269B /* RateFluctuationDetailView.swift */,
-				61DBDC7D2A0B36E700E2BB23 /* RatesFluctuationView.swift */,
-				612A62DF2A26DB250013C3C6 /* BaseCurrencyFilterView.swift */,
-				612A62E12A26DB560013C3C6 /* MultiCurrenciesFilterView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		61FEE00F29FF6EF8002EDA69 = {
-			isa = PBXGroup;
-			children = (
-				61FEE01A29FF6EF8002EDA69 /* ExchangeRates */,
-				61FEE01929FF6EF8002EDA69 /* Products */,
+				6DC539EB2923FE36006607A4 /* ExchangeRates */,
+				6DC539EA2923FE36006607A4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		61FEE01929FF6EF8002EDA69 /* Products */ = {
+		6DC539EA2923FE36006607A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				61FEE01829FF6EF8002EDA69 /* ExchangeRates.app */,
+				6DC539E92923FE36006607A4 /* ExchangeRates.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		61FEE01A29FF6EF8002EDA69 /* ExchangeRates */ = {
+		6DC539EB2923FE36006607A4 /* ExchangeRates */ = {
 			isa = PBXGroup;
 			children = (
-				61FEE02929FF6FF0002EDA69 /* DataProviders */,
-				6184A8672A1471E900AA269B /* Model */,
-				61DBDC7C2A0B36A200E2BB23 /* Views */,
-				613663432A2ED61C00A96112 /* ViewModel */,
-				61DBDC7F2A0B417F00E2BB23 /* Extensions.swift */,
-				61FEE01B29FF6EF8002EDA69 /* ExchangeRatesApp.swift */,
-				61FEE01F29FF6EFB002EDA69 /* Assets.xcassets */,
-				61FEE02129FF6EFB002EDA69 /* Preview Content */,
+				6DC539FA2923FF56006607A4 /* DataProviders */,
+				6DC53A2529241D6F006607A4 /* Models */,
+				6DC53A1C292410CA006607A4 /* Views */,
+				6DC53A322924340E006607A4 /* ViewModels */,
+				6DC539EC2923FE36006607A4 /* ExchangeRatesApp.swift */,
+				6DC53A1F2924168E006607A4 /* Extensions.swift */,
+				6DC539F02923FE39006607A4 /* Assets.xcassets */,
+				6DC539F22923FE39006607A4 /* Preview Content */,
 			);
 			path = ExchangeRates;
 			sourceTree = "<group>";
 		};
-		61FEE02129FF6EFB002EDA69 /* Preview Content */ = {
+		6DC539F22923FE39006607A4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				61FEE02229FF6EFB002EDA69 /* Preview Assets.xcassets */,
+				6DC539F32923FE39006607A4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		61FEE02929FF6FF0002EDA69 /* DataProviders */ = {
+		6DC539FA2923FF56006607A4 /* DataProviders */ = {
 			isa = PBXGroup;
 			children = (
-				613ED3602A049F2100A2911C /* CurrencySymbolsDataProvider */,
-				613ED35F2A049EFA00A2911C /* RatesDataProvider */,
-				61FEE02A29FF6FF5002EDA69 /* NetworkRepository */,
-				613ED3592A0499A600A2911C /* DataProviderManager.swift */,
+				6DC53A1929240B94006607A4 /* CurrencySymbolsDataProvider */,
+				6DC53A1429240A72006607A4 /* RatesDataProvider */,
+				6DC539FB2923FF6C006607A4 /* NetworkRepository */,
 			);
 			path = DataProviders;
 			sourceTree = "<group>";
 		};
-		61FEE02A29FF6FF5002EDA69 /* NetworkRepository */ = {
+		6DC539FB2923FF6C006607A4 /* NetworkRepository */ = {
 			isa = PBXGroup;
 			children = (
-				61162B3B2A03511D00F3C97D /* Objects */,
-				61162B3C2A03512B00F3C97D /* Stores */,
-				61D6A5AD2A000C360000F0B0 /* Router */,
-				61FEE02B29FF6FFE002EDA69 /* APIs */,
+				6DC53A0729240488006607A4 /* Objects */,
+				6DC53A04292403C2006607A4 /* Stores */,
+				6DC539FF29240061006607A4 /* Routers */,
+				6DC539FC2923FF87006607A4 /* Apis */,
 			);
 			path = NetworkRepository;
 			sourceTree = "<group>";
 		};
-		61FEE02B29FF6FFE002EDA69 /* APIs */ = {
+		6DC539FC2923FF87006607A4 /* Apis */ = {
 			isa = PBXGroup;
 			children = (
-				61D6A5AB2A0004A60000F0B0 /* RatesApi.swift */,
+				6DC539FD2923FFAD006607A4 /* RatesApi.swift */,
 			);
-			path = APIs;
+			path = Apis;
+			sourceTree = "<group>";
+		};
+		6DC539FF29240061006607A4 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				6DC53A0029240072006607A4 /* RatesRouter.swift */,
+				6DC53A022924007C006607A4 /* CurrencyRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		6DC53A04292403C2006607A4 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				6DC53A05292403D8006607A4 /* GenericStore.swift */,
+				6DC53A0E2924080E006607A4 /* RatesStore.swift */,
+				6DC53A10292408F9006607A4 /* CurrencyStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		6DC53A0729240488006607A4 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				6DCA1F972924713C00813B2A /* RateObject.swift */,
+				6DC53A0A292405E2006607A4 /* CurrencySymbolObject.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		6DC53A1429240A72006607A4 /* RatesDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				6DC53A1529240A7C006607A4 /* RatesFluctuationDataProvider.swift */,
+				6DC53A1729240B4F006607A4 /* RatesHistoricalDataProvider.swift */,
+			);
+			path = RatesDataProvider;
+			sourceTree = "<group>";
+		};
+		6DC53A1929240B94006607A4 /* CurrencySymbolsDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				6DC53A1A29240BA0006607A4 /* CurrencySymbolsDataProvider.swift */,
+			);
+			path = CurrencySymbolsDataProvider;
+			sourceTree = "<group>";
+		};
+		6DC53A1C292410CA006607A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DC539EE2923FE36006607A4 /* ContentView.swift */,
+				6DC53A1D292410EF006607A4 /* RatesFluctuationView.swift */,
+				6DC53A2329241C51006607A4 /* RateFluctuationDetailView.swift */,
+				6DC53A2829242C15006607A4 /* BaseCurrencyFilterView.swift */,
+				6DC53A2A29242C23006607A4 /* MultiCurrenciesFilterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DC53A2529241D6F006607A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DC53A2629241D7E006607A4 /* TimeRangeEnum.swift */,
+				6DC53A2C29243334006607A4 /* RateFluctuationModel.swift */,
+				6DC53A2E292433A8006607A4 /* CurrencySymbolModel.swift */,
+				6DC53A30292433DB006607A4 /* RateHistoricalModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DC53A322924340E006607A4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6DC53A3329243444006607A4 /* BaseCurrencyFilterViewModel.swift */,
+				6DC53A3929243EC3006607A4 /* RateFluctuationDetailViewModel.swift */,
+				6DC53A3529243694006607A4 /* MultiCurrenciesFilterViewViewModel.swift */,
+				6DC53A37292437A4006607A4 /* RatesFluctuationViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		61FEE01729FF6EF8002EDA69 /* ExchangeRates */ = {
+		6DC539E82923FE36006607A4 /* ExchangeRates */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61FEE02629FF6EFB002EDA69 /* Build configuration list for PBXNativeTarget "ExchangeRates" */;
+			buildConfigurationList = 6DC539F72923FE39006607A4 /* Build configuration list for PBXNativeTarget "ExchangeRates" */;
 			buildPhases = (
-				61FEE01429FF6EF8002EDA69 /* Sources */,
-				61FEE01529FF6EF8002EDA69 /* Frameworks */,
-				61FEE01629FF6EF8002EDA69 /* Resources */,
+				6DC539E52923FE36006607A4 /* Sources */,
+				6DC539E62923FE36006607A4 /* Frameworks */,
+				6DC539E72923FE36006607A4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -253,25 +244,25 @@
 			);
 			name = ExchangeRates;
 			productName = ExchangeRates;
-			productReference = 61FEE01829FF6EF8002EDA69 /* ExchangeRates.app */;
+			productReference = 6DC539E92923FE36006607A4 /* ExchangeRates.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		61FEE01029FF6EF8002EDA69 /* Project object */ = {
+		6DC539E12923FE36006607A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					61FEE01729FF6EF8002EDA69 = {
-						CreatedOnToolsVersion = 14.2;
+					6DC539E82923FE36006607A4 = {
+						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 61FEE01329FF6EF8002EDA69 /* Build configuration list for PBXProject "ExchangeRates" */;
+			buildConfigurationList = 6DC539E42923FE36006607A4 /* Build configuration list for PBXProject "ExchangeRates" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -279,69 +270,66 @@
 				en,
 				Base,
 			);
-			mainGroup = 61FEE00F29FF6EF8002EDA69;
-			productRefGroup = 61FEE01929FF6EF8002EDA69 /* Products */;
+			mainGroup = 6DC539E02923FE36006607A4;
+			productRefGroup = 6DC539EA2923FE36006607A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				61FEE01729FF6EF8002EDA69 /* ExchangeRates */,
+				6DC539E82923FE36006607A4 /* ExchangeRates */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		61FEE01629FF6EF8002EDA69 /* Resources */ = {
+		6DC539E72923FE36006607A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61FEE02329FF6EFB002EDA69 /* Preview Assets.xcassets in Resources */,
-				61FEE02029FF6EFB002EDA69 /* Assets.xcassets in Resources */,
+				6DC539F42923FE39006607A4 /* Preview Assets.xcassets in Resources */,
+				6DC539F12923FE39006607A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		61FEE01429FF6EF8002EDA69 /* Sources */ = {
+		6DC539E52923FE36006607A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61D6A5B12A000C7B0000F0B0 /* CurrencyRouter.swift in Sources */,
-				61162B402A03531300F3C97D /* CurrencySymbolObject.swift in Sources */,
-				61D6A5AF2A000C5D0000F0B0 /* RatesRouter.swift in Sources */,
-				613663422A2ED5A700A96112 /* RateHistoricalModel.swift in Sources */,
-				61FEE01E29FF6EF8002EDA69 /* ContentView.swift in Sources */,
-				61DA5B832A8AB1D700878CFB /* RateFluctuationDetailViewModel.swift in Sources */,
-				613663402A2ED52E00A96112 /* CurrencySymbolModel.swift in Sources */,
-				615576B82A4DFB61009F98B2 /* RatesFluctuationViewModel.swift in Sources */,
-				61162B3E2A03517100F3C97D /* FluctuationObject.swift in Sources */,
-				619C27652A70464B00BD6225 /* RateFluctuationDetailViewModel.swift in Sources */,
-				61FEE01C29FF6EF8002EDA69 /* ExchangeRatesApp.swift in Sources */,
-				615576B62A4DDDA5009F98B2 /* MultiCurrenciesFilterViewViewModel.swift in Sources */,
-				612A62E02A26DB250013C3C6 /* BaseCurrencyFilterView.swift in Sources */,
-				613ED35E2A049DE000A2911C /* RatesHistoricalDataProvider.swift in Sources */,
-				61162B422A03539600F3C97D /* RatesHistoricalObject.swift in Sources */,
-				613663452A2ED81800A96112 /* BaseCurrencyFilterViewModel.swift in Sources */,
-				61162B462A0359D800F3C97D /* RatesStore.swift in Sources */,
-				613ED35A2A0499A600A2911C /* DataProviderManager.swift in Sources */,
-				61D6A5AC2A0004A60000F0B0 /* RatesApi.swift in Sources */,
-				61162B442A03556100F3C97D /* BaseStore.swift in Sources */,
-				6184A8642A1469AB00AA269B /* RateFluctuationDetailView.swift in Sources */,
-				613ED3622A049F6700A2911C /* CurrencySimbolsDataProvider.swift in Sources */,
-				61DBDC7E2A0B36E700E2BB23 /* RatesFluctuationView.swift in Sources */,
-				61DBDC802A0B417F00E2BB23 /* Extensions.swift in Sources */,
-				6184A8662A146F4100AA269B /* TimeRangeEnum.swift in Sources */,
-				6136633E2A2ED47E00A96112 /* RateFluctuationModel.swift in Sources */,
-				613ED35C2A049BB800A2911C /* RatesFluctuationDataProvider.swift in Sources */,
-				61162B482A035FDE00F3C97D /* CurrencyStore.swift in Sources */,
-				612A62E22A26DB560013C3C6 /* MultiCurrenciesFilterView.swift in Sources */,
+				6DCA1F982924713C00813B2A /* RateObject.swift in Sources */,
+				6DC53A032924007C006607A4 /* CurrencyRouter.swift in Sources */,
+				6DC53A0129240072006607A4 /* RatesRouter.swift in Sources */,
+				6DC53A06292403D8006607A4 /* GenericStore.swift in Sources */,
+				6DC53A31292433DB006607A4 /* RateHistoricalModel.swift in Sources */,
+				6DC53A2F292433A8006607A4 /* CurrencySymbolModel.swift in Sources */,
+				6DC53A38292437A4006607A4 /* RatesFluctuationViewModel.swift in Sources */,
+				6DC539EF2923FE36006607A4 /* ContentView.swift in Sources */,
+				6DC539ED2923FE36006607A4 /* ExchangeRatesApp.swift in Sources */,
+				6DC53A3629243694006607A4 /* MultiCurrenciesFilterViewViewModel.swift in Sources */,
+				6DC53A2929242C15006607A4 /* BaseCurrencyFilterView.swift in Sources */,
+				6DC53A3429243444006607A4 /* BaseCurrencyFilterViewModel.swift in Sources */,
+				6DC53A1829240B4F006607A4 /* RatesHistoricalDataProvider.swift in Sources */,
+				6DC53A0B292405E2006607A4 /* CurrencySymbolObject.swift in Sources */,
+				6DC53A3A29243EC3006607A4 /* RateFluctuationDetailViewModel.swift in Sources */,
+				6DC53A0F2924080E006607A4 /* RatesStore.swift in Sources */,
+				6DC53A1B29240BA0006607A4 /* CurrencySymbolsDataProvider.swift in Sources */,
+				6DC53A2429241C51006607A4 /* RateFluctuationDetailView.swift in Sources */,
+				6DC539FE2923FFAD006607A4 /* RatesApi.swift in Sources */,
+				6DC53A1E292410EF006607A4 /* RatesFluctuationView.swift in Sources */,
+				6DC53A202924168E006607A4 /* Extensions.swift in Sources */,
+				6DC53A2729241D7E006607A4 /* TimeRangeEnum.swift in Sources */,
+				6DC53A2D29243334006607A4 /* RateFluctuationModel.swift in Sources */,
+				6DC53A1629240A7C006607A4 /* RatesFluctuationDataProvider.swift in Sources */,
+				6DC53A11292408F9006607A4 /* CurrencyStore.swift in Sources */,
+				6DC53A2B29242C23006607A4 /* MultiCurrenciesFilterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		61FEE02429FF6EFB002EDA69 /* Debug */ = {
+		6DC539F52923FE39006607A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -391,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +389,7 @@
 			};
 			name = Debug;
 		};
-		61FEE02529FF6EFB002EDA69 /* Release */ = {
+		6DC539F62923FE39006607A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -445,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -455,7 +443,7 @@
 			};
 			name = Release;
 		};
-		61FEE02729FF6EFB002EDA69 /* Debug */ = {
+		6DC539F82923FE39006607A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -466,19 +454,19 @@
 				DEVELOPMENT_TEAM = SN8P99F4BT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Taxa de Câmbio";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.jcls.mvvm.curso.ExchangeRates;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mg.jcls.ExchangeRates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -489,7 +477,7 @@
 			};
 			name = Debug;
 		};
-		61FEE02829FF6EFB002EDA69 /* Release */ = {
+		6DC539F92923FE39006607A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -500,19 +488,19 @@
 				DEVELOPMENT_TEAM = SN8P99F4BT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Taxa de Câmbio";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.jcls.mvvm.curso.ExchangeRates;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mg.jcls.ExchangeRates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -526,25 +514,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		61FEE01329FF6EF8002EDA69 /* Build configuration list for PBXProject "ExchangeRates" */ = {
+		6DC539E42923FE36006607A4 /* Build configuration list for PBXProject "ExchangeRates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61FEE02429FF6EFB002EDA69 /* Debug */,
-				61FEE02529FF6EFB002EDA69 /* Release */,
+				6DC539F52923FE39006607A4 /* Debug */,
+				6DC539F62923FE39006607A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61FEE02629FF6EFB002EDA69 /* Build configuration list for PBXNativeTarget "ExchangeRates" */ = {
+		6DC539F72923FE39006607A4 /* Build configuration list for PBXNativeTarget "ExchangeRates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61FEE02729FF6EFB002EDA69 /* Debug */,
-				61FEE02829FF6EFB002EDA69 /* Release */,
+				6DC539F82923FE39006607A4 /* Debug */,
+				6DC539F92923FE39006607A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 61FEE01029FF6EF8002EDA69 /* Project object */;
+	rootObject = 6DC539E12923FE36006607A4 /* Project object */;
 }

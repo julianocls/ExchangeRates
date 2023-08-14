@@ -2,9 +2,16 @@
 //  CurrencySymbolObject.swift
 //  ExchangeRates
 //
-//  Created by Juliano Santos on 3/5/23.
+//  Created by Juliano Santos on 15/08/23
 //
 
 import Foundation
 
-typealias CurrencySymbolObject = [String: String]
+struct CurrencySymbolObject: Codable {
+    var base: String?
+    var success: Bool = false
+    var symbols: SymbolObject?
+
+}
+
+typealias SymbolObject = [String: String]
